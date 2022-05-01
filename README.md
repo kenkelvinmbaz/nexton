@@ -75,9 +75,7 @@ F. balance: é o responsável pela leitura do saldo de usuarios. Para poder o us
 
 GET : http://127.0.0.1:8000/api/balance
 
-{
-    "email":"leculte01@gmail.com"
-}
+NB: Para que esse operação seja verificada, o usuario é autenticado pelo Token que deve ser passado via header (Token bearer)
 
 
 
