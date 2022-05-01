@@ -71,6 +71,8 @@ POST : http://127.0.0.1:8000/api/transfer
     "currency": "2"
 }
 
+Você precisa informar a moeda. 1 para Dolar 2 para Real
+
 F. balance: é o responsável pela leitura do saldo de usuarios. Para poder o usar você precisa enviar a requisição via GET com os seguintes objetos:
 
 GET : http://127.0.0.1:8000/api/balance
