@@ -1,0 +1,64 @@
+body {
+    height: 110px;
+    /*overflow: hidden; /* Hide scrollbars */
+    background-color: black;
+  }
+  header {
+    position: relative;
+  }
+  
+  #stripes {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(150deg, rgb(21, 68, 197) 15%, #5a80c7 70%, #021e6d 94%);
+    position: absolute;
+    transform-origin: 0;
+    
+    > span {
+      position: absolute;
+      width: 33.3%;
+      height: 190px;
+      background: #53f;
+    }
+    > span:nth-child(2) {
+      background: #4553ff;
+      left: 16.666%;
+      top: 0;
+    }
+    > span:nth-child(3) {
+      background: #4f40ff;
+      left: 49.9999%;
+      bottom: auto;
+    }
+    > span:nth-child(4) {
+      right: -16.666%;
+      top: 380px;
+      background: #25ddf5;
+    }
+    > span:nth-child(5) {
+      bottom: 0;
+      background: #1fa2ff;
+      
+    }
+  }
+  
+  .loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('https://thumbs.gfycat.com/CompleteShallowFlyingsquirrel-size_restricted.gif') 50% 50% no-repeat rgb(249,249,249);
+
+  
+  #intro {
+    height: 760px;
+    // background: #eee;
+  } 
+
+  
+  
+  
+  
+  

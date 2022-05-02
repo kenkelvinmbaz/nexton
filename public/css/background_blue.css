@@ -1,0 +1,35 @@
+/* body{
+    background: url("../img/nuvenspay.png") 0 0/100% 100% no-repeat;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  
+  } */
+
+  @media only screen and (max-height: 640px) {
+    .texto-size {
+      font-size: 12px;
+      color:black; font-family: Arial, Helvetica, sans-serif
+    }
+
+    .image-size{
+        width: 250px;
+    }
+
+  }
+
+
+  /* .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 7%;
+    background-color: rgb(44, 104, 214);
+    color: white;
+    text-align: center;
+  } */
