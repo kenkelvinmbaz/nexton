@@ -8,7 +8,10 @@ INSTRUÇÃO
 2. Clone o projeto.
 3. abre um terminal do seu notebook. navega até a pasta do projeto dentro do terminal. Uma fez feito, roda o seguinte comando : composer install para instalar algumas dependencia do Laravel.
 4. Para rodar o servidor da aplicção, basta você rodar esse comando dentro do seu terminal: php artisan serve. 
-o servidor vai ser lançado com  http://127.0.0.1:8000
+o servidor local vai ser lançado com  http://127.0.0.1:8000. Mas você pode tbm user esse servidor https://nexton.nuvenspay.com/ (se quiser receber email e sms).
+5. rodar o comando: php artisan migrate   para replicar as tabelas criadas no banco de dados.
+
+NB: LEMBRANDO QUE O PROJETO USA A CONEXÃO COM O BANCO DE DADOS MYSQL.
 
 END-POINT
 ---------------
