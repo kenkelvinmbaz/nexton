@@ -32,7 +32,7 @@ class AuthController extends Controller
     /**********  Login in the App      *******/
     /*****************************************/
   
-    public function login(Request $request)
+    public function Login(Request $request)
     {
         $credentials = $request->only(['email', 'password']);
         $email       = $request->email;
@@ -171,7 +171,7 @@ class AuthController extends Controller
     /******** Return the Token created  *****/
     /*****************************************/
 
-    protected function respondWithToken($token)
+    protected function RespondWithToken($token)
     {
      
         return response()->json([
@@ -185,7 +185,7 @@ class AuthController extends Controller
     /**********    Create a new User   *******/
     /*****************************************/
 
-    public function signin (Request $request)
+    public function Signin (Request $request)
     {
 
          /*****************************************/
@@ -333,7 +333,7 @@ class AuthController extends Controller
     /*****************************************/
     /**********  TO know who is logged *******/
     /*****************************************/
-    public function me(Request $request)
+    public function Me(Request $request)
     {
         
         try {
@@ -365,7 +365,7 @@ class AuthController extends Controller
    /*****************************************/
     /**********       Logout          *******/
     /*****************************************/
-    public function logout()
+    public function Logout()
     {
         auth('api')->logout();
         
@@ -373,13 +373,13 @@ class AuthController extends Controller
     }
 
   
-    public function refresh()
+    public function Refresh()
     {
         return $this->respondWithToken(auth()->refresh());
     }
 
     
-    public function show($token)
+    public function TokenVerificationSecurity($token)
     {
        
             //VERIFICANDO SE O TOKEN RECEBIDO E IGUAL AO O QUE ESTÁ NA BASE

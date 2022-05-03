@@ -75,7 +75,7 @@ class MerchantController extends Controller
   /**************************************************************/
   /*****************      CREATING TOKEN JWT     ****************/
   /**************************************************************/    
-  protected function respondWithToken($token)
+  protected function RespondWithToken($token)
     {
         return response()->json([
             'access_token' => $token,
@@ -88,7 +88,7 @@ class MerchantController extends Controller
   /**************************************************************/
   /*****************      REGISTRATION MERCHANT    **************/
   /**************************************************************/
-    public function signin (Request $request)
+    public function Signin (Request $request)
     {
 
          /*****************************************/

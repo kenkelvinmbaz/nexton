@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Mail;
 
 class TransferController extends Controller
 {
-    public function store(Request $request)
+    public function SendMoneyProcess(Request $request)
     {
         $user           = Auth::user();//session
         $getuser        = Auth::id();

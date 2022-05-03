@@ -14,7 +14,7 @@ class WalletController extends Controller
     /****************************************************************/
     /******************SHOW BALANCE FROM WALLET***********************/
     /****************************************************************/
-    public function index()
+    public function SeeBalance()
     {
         $user    = Auth::user();//session
         $getuser = Auth::id();
