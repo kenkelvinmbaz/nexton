@@ -26,7 +26,7 @@ class TransferController extends Controller
         $user           = Auth::user();//session
         $getuser        = Auth::id();
         $email_receiver = $request->email_receiver;
-        return $money =encrypt("30") ;
+        //$money          =encrypt("30") ;
         $validator = Validator::make($request->all(), [
             'amount_send'    =>'required', 
             'email_receiver' =>'required|email|min:2|max:225',
@@ -224,7 +224,7 @@ class TransferController extends Controller
                                 //SENDER
                                 Mail::send('mail.transfer_sender', [ 'name_sender' => $name_sender,'mail_date'=>$mail_date,'lastname_sender'=>$lastname_sender ,'amount_history'=> $Deposit, 'name' => $MerchantName,'lastname'=>$MerchantLastname], function ($message) use ($email_sender){  
                                     $message->to($email_sender);
-                                    $message->subject('Transfert Authorisé');
+                                    $message->subject('Transferência Autorisada');
                         
                                 });
     
